@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/traveling</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping class="dbmodel.Attractions"/>
+        <mapping class="dbmodel.Calendar"/>
+        <mapping class="dbmodel.Cities"/>
+        <mapping class="dbmodel.Continents"/>
+        <mapping class="dbmodel.Countries"/>
+        <mapping class="dbmodel.Cuisine"/>
+        <mapping class="dbmodel.Hotels"/>
+        <mapping class="dbmodel.Restaurants"/>
+        <mapping class="dbmodel.RestCuis"/>
+        <mapping class="dbmodel.Roles"/>
+        <mapping class="dbmodel.Routes"/>
+        <mapping class="dbmodel.Tickets"/>
+        <mapping class="dbmodel.Transport"/>
+        <mapping class="dbmodel.Users"/>
+        <mapping class="dbmodel.UsersRoutes"/>
+        <mapping class="dbmodel.PlaceStats"/>
+        <mapping class="dbmodel.PlaceTypes"/>
+        <mapping class="dbmodel.AttractionStats"/>
+        <mapping class="dbmodel.HotelStats"/>
+        <mapping class="dbmodel.RestaurantStats"/>
+    </session-factory>
+</hibernate-configuration>

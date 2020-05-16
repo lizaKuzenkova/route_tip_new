@@ -1,0 +1,55 @@
+.header-link-white {
+	color: white;
+	padding: 6px
+}
+
+.header-link-gray {
+	color: darkgray;
+}
+
+.nostyle{
+}
+
+.regform {
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	margin: 150px auto 20px auto; 
+	width: 312px; 
+	font-family: Helvetica; 
+	sans-serif; font-size: 16px; 
+	-webkit-box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+	box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3)
+}
+
+.inputfield {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px;
+	outline: none;
+	-webkit-appearance:none;
+	width: 260px;
+	align: center;
+	position: center;
+	margin-left:55px
+}
+
+.labelfield {
+	width:10px; 
+	margin-top:5px; 
+	margin-left:55px
+}
+
+.btn {
+	background-color: #ebebeb;
+	border: none; 
+	border-radius:3px; 
+	-moz-border-radius: 3px;
+	-webkit-border-radius:3px; 
+	color: #404040;
+	cursor:pointer; 
+	float: none; 
+	font-weight: bold; 
+	margin-top: 20px; 
+	padding: 12px 12px; 
+	-webkit-appearance: none
+}

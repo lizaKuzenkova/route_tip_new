@@ -73,8 +73,8 @@ public class Login extends HttpServlet {
 				httpsess.setAttribute("user_id", user.getIdUser());
 				httpsess.setAttribute("role", user.getRoles().getRoleName());
 
-				response.getWriter().append("<div style=\"color:#1D1517; margin-top:30px; margin-left: 730px; font-family: Helvetica;\"><h2>Вход успешно выполнен, " + user.getFirstName() + "!</h2></div>");
-				response.getWriter().append("<div style=\"margin-top:10px; margin-left: 810px; font-family: Helvetica;\"><br><h2 style=\"padding:5px\"><a href=\"HomePage\" style=\"color:#F5E7E7\">Составление маршрута</a></h2></div>");
+				response.getWriter().append("<div style=\"color:#1D1517; margin-top:30px; margin-left:730px; font-family: Helvetica;\"><h2>Вход успешно выполнен, " + user.getFirstName() + "!</h2></div>");
+				response.getWriter().append("<div style=\"margin-top:10px; margin-left: 810px; font-family: Helvetica;\"><br><h2 style=\"padding:5px\"><a href=\"HomePage\" style=\"color:#1D1517\">Составление маршрута</a></h2></div>");
 				
 				String role_name = user.getRoles().getRoleName(); 
 
@@ -82,12 +82,12 @@ public class Login extends HttpServlet {
 				
 				if ( role_name.equals("администратор") || role_name.equals("пользователь") ) {
 					response.getWriter().append( "<div style=\"margin-left: 830px; font-family: Helvetica\"><br><h2 style=\"padding:5px\">"
-							+ "<style type=\"text/css\">a:link{color:#F5E7E7} a:visited{color:#F5E7E7}</style>"
+							+ "<style type=\"text/css\">a:link{color:#1D1517} a:visited{color:#1D1517}</style>"
 							+ "<a href=\"UserAdministration\">Администрирование</a></h2></div>");
 				}
 
 			} else {
-				response.getWriter().append("<div style=\"color:#DC143C; margin-top:30px; margin-left: 770px; font-family: Helvetica;\"><h2>Неверный логин и/или пароль</h2></div>");
+				response.getWriter().append("<div style=\"color:#DC143C; background:#ebebeb; width:370px; margin-top:30px; margin-left: 770px; font-family: Helvetica;\"><h2>Неверный логин и/или пароль</h2></div>");
 			}
 		}
 	}		

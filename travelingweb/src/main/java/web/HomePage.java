@@ -30,6 +30,7 @@ public class HomePage extends HttpServlet {
 			throws ServletException, IOException {
 
 		String target_city = request.getParameter("targetCity");
+//		String target_city = request.getParameter("selected_city");
 
 		if (target_city == null)
 			target_city = "";
@@ -53,25 +54,25 @@ public class HomePage extends HttpServlet {
 							+ "<ul class=\"topmenu\">"						
 								+ "<li><class=\"dropdown\">Администрирование</a>"
 									+ "<ul class=\"submenu\">"
-										+ "<li><a href=\"UserAdministration#users\">Пользователи</a></li>"
-										+ "<li><a href=\"UserAdministration#attractions\">Достопримечательности</a></li>"
-										+ "<li><a href=\"UserAdministration#hotels\">Отели</a></li>"
-										+ "<li><a href=\"UserAdministration#restaurants\">Рестораны</a></li>"
+										+ "<li><a href=\"UserAdministration#users\">Пользователи</a><br><br></li>"
+										+ "<li><a href=\"UserAdministration#attractions\">Достопримечательности</a><br><br></li>"
+										+ "<li><a href=\"UserAdministration#hotels\">Отели</a><br><br></li>"
+										+ "<li><a href=\"UserAdministration#restaurants\">Рестораны</a><br><br></li>"
 									+ "</ul>"
 								+ "</li>"
 								+ "<li><class=\"dropdown\">Справочники</a>"
 									+ "<ul class=\"submenu\">"
-										+ "<li><a href=\"UserAdministration#continents\">Континенты</a></li>"
-										+ "<li><a href=\"UserAdministration#countries\">Страны</a></li>"
-										+ "<li><a href=\"UserAdministration#cities\">Города</a></li>"
-										+ "<li><a href=\"UserAdministration#cuisine\">Виды кухни</a></li>"							
-										+ "<li><a href=\"UserAdministration#roles\">Роли пользователей</a></li>"
+										+ "<li><a href=\"UserAdministration#continents\">Континенты</a><br><br></li>"
+										+ "<li><a href=\"UserAdministration#countries\">Страны</a><br><br></li>"
+										+ "<li><a href=\"UserAdministration#cities\">Города</a><br><br></li>"
+										+ "<li><a href=\"UserAdministration#cuisine\">Виды кухни</a><br><br></li>"							
+										+ "<li><a href=\"UserAdministration#roles\">Роли пользователей</a><br><br></li>"
 									+ "</ul>"
 								+ "</li>"	
 								+ "<li><class=\"dropdown\">Сервис</a>"
 									+ "<ul class=\"submenu\">"
-										+ "<li><a href=\"Statistics\">Статистика</a></li>"
-										+ "<li><a href=\"HomePage\">Составление маршрута</a></li>"
+										+ "<li><a href=\"Statistics\">Статистика</a><br><br></li>"
+										+ "<li><a href=\"HomePage\">Составление маршрута</a><br><br></li>"
 									+ "</ul>"
 								+ "</li>"
 							+ "</ul></nav></div>");
@@ -98,7 +99,8 @@ public class HomePage extends HttpServlet {
 				+ "<div style=\"font-family: Helvetica, sans-serif; font-size:18px\" align=\"center\"><label style=\"margin-right:10px\">Выберите город</label>  ");
 
 		response.getWriter().append("<input type=\"text\" name=\"targetCity\" value=\"" + target_city + "\" >");
-
+//		response.getWriter().append(Utility.BuildDropDownCities(response));
+		
 		response.getWriter().append("  <input type=\"submit\" value=\"Искать\"></div>");
 				
 		if (target_city != "") {

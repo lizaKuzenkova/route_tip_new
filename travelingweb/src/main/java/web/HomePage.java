@@ -331,7 +331,7 @@ public class HomePage extends HttpServlet {
 					PLACE_OR_ROUTE = "маршрут";
 				}
 				response.getWriter().append("<div align=\"center\"><h1><a href=\"" + route_url
-						+ "\" target=\"_blank\" style=\"color:#D6D7C7\">Показать " + PLACE_OR_ROUTE + "</a></h1></div>");				
+						+ "\" target=\"_blank\" style=\"color:#D6D7C7\">Показать " + PLACE_OR_ROUTE + "</a></h1></div>");
 			}
 			else {
 				response.getWriter().append("<div align=\"center\"><h1>Ничего не выбрано</h1></div>");

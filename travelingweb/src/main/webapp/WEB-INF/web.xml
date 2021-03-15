@@ -233,6 +233,12 @@
   	<description></description>
   	<servlet-class>controllers.UserAdd</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ExportToPdf</servlet-name>
+  	<display-name>ExportToPdf</display-name>
+  	<description></description>
+  	<servlet-class>controllers.ExportToPdf</servlet-class>
+  </servlet>
 
   <servlet-mapping>
   	<servlet-name>UserRegistration</servlet-name>
@@ -388,6 +394,10 @@
   <servlet-mapping>
   	<servlet-name>UserAdd</servlet-name>
   	<url-pattern>/UserAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ExportToPdf</servlet-name>
+  	<url-pattern>/ExportToPdf</url-pattern>
   </servlet-mapping>
 
 </web-app>
